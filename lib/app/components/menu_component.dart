@@ -1,4 +1,5 @@
 import 'package:first_app/app/pages/counter_page.dart';
+import 'package:first_app/app/pages/galery_page.dart';
 import 'package:first_app/app/pages/home_page.dart';
 import 'package:first_app/app/pages/list_page.dart';
 import 'package:flutter/cupertino.dart';
@@ -40,6 +41,15 @@ Widget Menu(BuildContext context)
             Navigator.push(
                 context,
                 MaterialPageRoute(builder: (context) => ListPage(title: 'My List Names'))
+            );
+          },
+        ),
+        ListTile(
+          title: const Text('Gallery Page'),
+          onTap: () {
+            Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => GaleryPage(title: 'My Gallery'))
             );
           },
         ),
